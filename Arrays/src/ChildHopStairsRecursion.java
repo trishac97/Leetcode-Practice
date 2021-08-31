@@ -2,6 +2,7 @@
 public class ChildHopStairsRecursion {
 	
 	static int countWays(int stairs) {
+		System.out.println("Stairs now:"+stairs);
 		if(stairs< 0)
 			return 0;
 		else if(stairs==1)
