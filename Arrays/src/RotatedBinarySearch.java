@@ -5,10 +5,14 @@ public class RotatedBinarySearch {
 		int x = 9;
 		int mid = (left+right)/2;
 		
+
+		
+		if(a[mid] == x)
+			return 1;
+		
 		if(left>right)
 			return -1;
-		else if(a[mid] == x)
-			return 1;
+		
 		else if(a[mid]>a[left]) { //left side sorted
 			if(x<a[mid] && x>=a[left])
 				return binarySearch(a,left,mid-1);
